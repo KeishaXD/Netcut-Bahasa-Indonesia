@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin">
+        <TextView
+            android:textSize="@dimen/tile_text_Size"
+            android:textStyle="bold"
+            android:textColor="#ffffffff"
+            android:gravity="left"
+            android:layout_gravity="left"
+            android:id="@id/schedule_node_info"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jadwal Offline untuk " />
+        <View
+            android:background="@android:color/darker_gray"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_marginTop="@dimen/margin_top"
+            android:layout_marginBottom="@dimen/margin_bottom" />
+        <TextView
+            android:textStyle="bold"
+            android:textColor="#ffffffff"
+            android:gravity="left"
+            android:layout_gravity="left"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jadwal Offline harian" />
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5.0">
+            <TextView
+                android:gravity="center"
+                android:layout_gravity="left"
+                android:id="@id/schdule_off_start"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:layout_width="0.0dip"
+                android:layout_height="40.0dip"
+                android:layout_margin="@dimen/margin"
+                android:text="Mulai:"
+                android:layout_weight="1.0" />
+            <Button
+                android:layout_gravity="center_horizontal"
+                android:id="@id/schdule_off_start_button"
+                android:layout_width="0.0dip"
+                android:layout_height="40.0dip"
+                android:layout_margin="@dimen/margin_top"
+                android:text="00:00"
+                android:layout_weight="4.0"
+                android:onClick="onSetScheduleStart"
+                xmlns:android="http://schemas.android.com/apk/res/android" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5.0">
+            <TextView
+                android:gravity="center"
+                android:layout_gravity="left"
+                android:id="@id/schdule_off_end"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:layout_width="0.0dip"
+                android:layout_height="40.0dip"
+                android:layout_margin="@dimen/margin"
+                android:text="Selesai:"
+                android:layout_weight="1.0" />
+            <Button
+                android:layout_gravity="center_horizontal"
+                android:id="@id/schdule_off_finish_button"
+                android:layout_width="0.0dip"
+                android:layout_height="40.0dip"
+                android:layout_marginTop="@dimen/margin_top"
+                android:text="@string/hello_world"
+                android:layout_weight="4.0"
+                android:onClick="onSetScheduleFinish"
+                xmlns:android="http://schemas.android.com/apk/res/android" />
+        </LinearLayout>
+        <View
+            android:background="@android:color/darker_gray"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip" />
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top">
+            <TextView
+                android:textStyle="bold"
+                android:textColor="#ffffffff"
+                android:gravity="left"
+                android:layout_gravity="left"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Offline Satu Kali (Menit dari sekarang)" />
+            <Button
+                android:layout_gravity="center_horizontal"
+                android:id="@id/bAdd"
+                android:layout_width="138.0dip"
+                android:layout_height="40.0dip"
+                android:layout_marginTop="@dimen/margin_top"
+                android:layout_marginBottom="@dimen/margin_bottom"
+                android:text="+"
+                android:onClick="onAddOneTimeClick"
+                xmlns:android="http://schemas.android.com/apk/res/android" />
+            <EditText
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:id="@id/Schedule_off_onetime_minutes"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:layout_width="138.0dip"
+                android:layout_height="wrap_content"
+                android:text="10"
+                android:digits="true" />
+            <Button
+                android:layout_gravity="center_horizontal"
+                android:id="@id/bSub"
+                android:layout_width="138.0dip"
+                android:layout_height="40.0dip"
+                android:layout_margin="@dimen/margin_top"
+                android:text="-"
+                android:onClick="onSubOneTimeClick" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:background="@android:color/darker_gray"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+    <com.google.android.gms.ads.AdView
+        android:layout_gravity="center"
+        android:id="@id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:weightSum="3.0">
+        <Button
+            android:id="@id/Cancel"
+            android:layout_width="100.0dip"
+            android:layout_height="wrap_content"
+            android:text="Batal"
+            android:layout_weight="1.0"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:onClick="onCancel"
+            android:layout_alignParentStart="true" />
+        <Button
+            android:id="@id/ClearSetting"
+            android:layout_width="100.0dip"
+            android:layout_height="wrap_content"
+            android:text="Kosongkan"
+            android:layout_weight="1.0"
+            android:layout_toRightOf="@id/Cancel"
+            android:layout_alignParentTop="true"
+            android:onClick="onClear"
+            android:layout_toEndOf="@id/Cancel" />
+        <Button
+            android:id="@id/Set"
+            android:layout_width="100.0dip"
+            android:layout_height="wrap_content"
+            android:text="Atur"
+            android:layout_weight="1.0"
+            android:layout_toRightOf="@id/ClearSetting"
+            android:layout_alignParentTop="true"
+            android:onClick="onSet"
+            android:layout_toEndOf="@id/ClearSetting" />
+    </LinearLayout>
+</LinearLayout>

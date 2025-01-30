@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="common_google_signin_btn_icon_dark">#3333b5e5</item>
+    <item type="drawable" name="common_google_signin_btn_icon_dark_focused">#3333b5e5</item>
+    <item type="drawable" name="common_google_signin_btn_icon_light">#3333b5e5</item>
+    <item type="drawable" name="common_google_signin_btn_icon_light_focused">#3333b5e5</item>
+    <item type="drawable" name="common_google_signin_btn_text_dark">#3333b5e5</item>
+    <item type="drawable" name="common_google_signin_btn_text_dark_focused">#3333b5e5</item>
+    <item type="drawable" name="common_google_signin_btn_text_light">#3333b5e5</item>
+    <item type="drawable" name="common_google_signin_btn_text_light_focused">#3333b5e5</item>
+    <item type="drawable" name="notification_template_icon_bg">#3333b5e5</item>
+</resources>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:paddingBottom="8.0dip"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:textSize="@dimen/tile_text_Size"
+        android:textStyle="bold"
+        android:textColor="#ff006699"
+        android:gravity="left"
+        android:id="@id/header"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:focusableInTouchMode="false"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="5.0"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout
+            android:orientation="vertical"
+            android:focusableInTouchMode="false"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:weightSum="3.0"
+            android:layout_weight="1.0"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+            <ImageButton
+                android:layout_gravity="top"
+                android:id="@id/on_off_image"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:src="@drawable/online"
+                android:layout_weight="1.0" />
+"
+\"
+\\\"
+\\\\\\\"
+\\\\\\\\\\\\\\\"
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\" \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"	<ImageButton
+                android:layout_gravity="top"
+                android:id="@id/Timer_Off_Setup_img"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:src="@drawable/timer_online"
+                android:layout_weight="1.0"
+                android:layout_alignParentRight="true" />
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:focusableInTouchMode="false"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:focusableInTouchMode="false"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="5.0"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+                <TextView
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="Nama:"
+                    android:autoText="false"
+                    android:layout_weight="2.0" />
+                <TextView
+                    android:id="@id/name"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.0" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:focusableInTouchMode="false"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="5.0"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+                <TextView
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="IP:"
+                    android:autoText="false"
+                    android:layout_weight="2.0" />
+                <TextView
+                    android:id="@id/ip"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.0" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:focusableInTouchMode="false"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="5.0"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+                <TextView
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="MAC:"
+                    android:autoText="false"
+                    android:layout_weight="2.0" />
+                <TextView
+                    android:id="@id/mac"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.0" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:focusableInTouchMode="false"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="5.0"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+                <TextView
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="Merek:"
+                    android:autoText="false"
+                    android:layout_weight="2.0" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:focusableInTouchMode="false"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.0"
+                    xmlns:android="http://schemas.android.com/apk/res/android">
+                    <TextView
+                        android:id="@id/brand"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:layout_gravity="center_vertical"
+                        android:id="@id/brandimg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:focusableInTouchMode="false"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="5.0"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+                <TextView
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="Terlindungi:"
+                    android:autoText="false"
+                    android:layout_weight="2.0" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:focusableInTouchMode="false"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.0"
+                    xmlns:android="http://schemas.android.com/apk/res/android">
+                    <TextView
+                        android:id="@id/protection"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:layout_gravity="center_vertical"
+                        android:id="@id/protectionimg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="Status jika di bawah Perlindungan Netcut DefAkhirier" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:focusableInTouchMode="false"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="5.0"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+                <TextView
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="Penyerang:"
+                    android:autoText="false"
+                    android:layout_weight="2.0" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:focusableInTouchMode="false"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.0"
+                    xmlns:android="http://schemas.android.com/apk/res/android">
+                    <TextView
+                        android:id="@id/attack"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:layout_gravity="center_vertical"
+                        android:id="@id/attackimg"
+                        android:focusable="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@id/Timer_off_view"
+                android:focusableInTouchMode="false"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="5.0"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+                <TextView
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="Waktu Offline:"
+                    android:autoText="false"
+                    android:layout_weight="2.0" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:focusableInTouchMode="false"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:weightSum="4.0"
+                    android:layout_weight="3.0"
+                    xmlns:android="http://schemas.android.com/apk/res/android">
+                    <TextView
+                        android:id="@id/Timer_off_left"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3.0"
+                        android:layout_alignParentTop="true" />
+                    <View
+                        android:layout_width="0.0dip"
+                        android:layout_height="0.0dip"
+                        android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

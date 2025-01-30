@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:paddingBottom="8.0dip"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:textStyle="bold"
+        android:textColor="#ffffbf00"
+        android:gravity="left"
+        android:id="@id/header"
+        android:padding="8.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:id="@id/on_off_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5.0dip" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:background="#ff000000"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="5.0"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="Nama:"
+                    android:autoText="false"
+                    android:layout_weight="2.0" />
+                <TextView
+                    android:id="@id/name"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.0" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="5.0"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="IP:"
+                    android:autoText="false"
+                    android:layout_weight="2.0" />
+                <TextView
+                    android:id="@id/ip"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.0" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:background="#ff000000"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="5.0"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="MAC:"
+                    android:autoText="false"
+                    android:layout_weight="2.0" />
+                <TextView
+                    android:id="@id/mac"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.0" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="5.0"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="Merek:"
+                    android:autoText="false"
+                    android:layout_weight="2.0" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.0"
+                    xmlns:android="http://schemas.android.com/apk/res/android">
+                    <TextView
+                        android:id="@id/brand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:layout_gravity="center_vertical"
+                        android:id="@id/brandimg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:background="#ff000000"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="5.0"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="Terlindungi:"
+                    android:autoText="false"
+                    android:layout_weight="2.0" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.0"
+                    xmlns:android="http://schemas.android.com/apk/res/android">
+                    <TextView
+                        android:id="@id/protection"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:layout_gravity="center_vertical"
+                        android:id="@id/protectionimg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="Status jika di bawah Perlindungan Netcut DefAkhirier:" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="5.0"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="Penyerang:"
+                    android:autoText="false"
+                    android:layout_weight="2.0" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.0"
+                    xmlns:android="http://schemas.android.com/apk/res/android">
+                    <TextView
+                        android:id="@id/attack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:layout_gravity="center_vertical"
+                        android:id="@id/attackimg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

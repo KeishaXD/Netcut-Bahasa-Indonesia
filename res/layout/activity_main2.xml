@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:ads="http://schemas.android.com/apk/res-auto">
+        <TextView
+            android:textColor="#ffffffff"
+            android:gravity="left"
+            android:layout_gravity="center|left"
+            android:id="@id/txt_admessage"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:layout_weight="4.0"
+            style="@style/title" />
+        <View
+            android:background="#ff808080"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+        <ImageButton
+            android:layout_gravity="center|right"
+            android:id="@id/img_setting"
+            android:background="@drawable/on_off_button_bg"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:src="@drawable/settings"
+            android:layout_weight="1.0"
+            android:layout_alignParentRight="true"
+            android:onClick="onClickSetting" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5.0">
+            <ToggleButton
+                android:id="@id/button_protect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOn="Defender On"
+                android:textOff="Defender Off"
+                android:onClick="onProtectionClick" />
+            <Button
+                android:gravity="center"
+                android:id="@id/button_scan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_scan"
+                android:layout_weight="1.0"
+                android:onClick="ScanNetWork"
+                xmlns:android="http://schemas.android.com/apk/res/android" />
+            <Button
+                android:gravity="center"
+                android:id="@id/button_help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bantuan"
+                android:layout_weight="1.0"
+                android:onClick="OnHelp"
+                xmlns:android="http://schemas.android.com/apk/res/android" />
+        </LinearLayout>
+        <com.google.android.gms.ads.AdView
+            android:layout_gravity="center"
+            android:id="@id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingLeft="18.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="#ffffffff"
+                android:gravity="left"
+                android:layout_gravity="left"
+                android:id="@id/txt_status"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="status"
+                style="@style/status" />
+        </LinearLayout>
+        <ListView
+            android:id="@id/nodeview"
+            android:animationCache="false"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scrollingCache="false"
+            android:divider="#ffa4a4a4"
+            android:dividerHeight="1.0px"
+            android:fastScrollEnabled="true"
+            android:smoothScrollbar="true" />
+    </LinearLayout>
+</LinearLayout>

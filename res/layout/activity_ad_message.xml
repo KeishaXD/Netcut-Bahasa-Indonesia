@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0">
+        <TextView
+            android:textSize="18.0dip"
+            android:textStyle="bold"
+            android:textColor="#ffffffff"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@id/txt_admessage"
+            android:padding="20.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="Halo dunia\n1\n2\n3\n4\n5\n6\n7\n8" />
+    </LinearLayout>
+    <Button
+        android:textStyle="bold"
+        android:textColor="#ffffffff"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@id/button_ad_ok"
+        android:background="@drawable/togglebutton_on"
+        android:layout_width="144.0dip"
+        android:layout_height="40.0dip"
+        android:layout_marginBottom="40.0dip"
+        android:text="Terima"
+        android:onClick="onOK" />
+</LinearLayout>

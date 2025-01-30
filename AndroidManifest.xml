@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    android:compileSdkVersion="35"
+    android:compileSdkVersionCodename="15"
+    package="com.lrcai.ravens"
+    platformBuildVersionCode="27"
+    platformBuildVersionName="15"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Memungkinkan aplikasi membuat soket jaringan dan menggunakan protokol jaringan khusus. Browser dan aplikasi lain menyediakan sarana untuk mengirim data ke internet sehingga izin ini tidak diperlukan untuk mengirim data ke internet. -->
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+    <!-- Memungkinkan aplikasi menerima paket yang dikirim ke semua perangkat melalui jaringan Wi-Fi menggunakan alamat multicast, bukan hanya ponsel Anda. Izin ini akan menggunakan lebih banyak daya daripada mode selain multicast. -->
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <!-- Memungkinkan aplikasi melihat informasi tentang koneksi jaringan, misalnya jaringan yang ada dan terhubung. -->
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Memungkinkan aplikasi melihat informasi tentang jaringan Wi-Fi, misalnya apakah Wi-Fi diaktifkan dan nama perangkat Wi-Fi yang terhubung. -->
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission
+        android:name="android.permission.CONNECTIVITY_CHANGE" />
+    <!-- Aplikasi ini bisa mendapatkan lokasi pasti Anda dari layanan lokasi saat aplikasi sedang digunakan. Layanan lokasi untuk perangkat harus diaktifkan agar aplikasi bisa mendapatkan lokasi. Ini dapat meningkatkan penggunaan baterai. -->
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- Aplikasi ini bisa mendapatkan perkiraan lokasi Anda dari layanan lokasi saat aplikasi sedang digunakan. Layanan lokasi untuk perangkat harus diaktifkan agar aplikasi bisa mendapatkan lokasi. -->
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- Mengizinkan pengguna membeli item melalui Google Play dari dalam apl ini. -->
+    <uses-permission
+        android:name="com.android.vending.BILLING" />
+    <!-- Mengizinkan apl mencegah ponsel tidur. -->
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:resizeable="true"
+        android:xlargeScreens="true" />
+    <application
+        android:theme="@style/Theme.MyTheme"
+        android:label="@string/app_name"
+        android:icon="@mipmap/netcut"
+        android:name="com.lrcai.ravens.JNetCutApp"
+        android:testOnly="false"
+        android:allowBackup="true">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <activity
+            android:label="@string/app_name"
+            android:name="com.lrcai.ravens.UI.MainActivityTabLayout"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN" />
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Dialog"
+            android:name="com.lrcai.ravens.UI.updateDialog" />
+        <activity
+            android:theme="@android:style/Theme.Translucent"
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" />
+        <activity
+            android:label="@string/title_activity_schedule__offline_dlg"
+            android:name="com.lrcai.ravens.UI.Schedule_Offline_dlg" />
+        <activity
+            android:label="@string/title_activity_device_manager"
+            android:name="com.lrcai.ravens.JMonitorDeviceDlg" />
+        <activity
+            android:label="@string/title_activity_gopro_manager"
+            android:name="com.lrcai.ravens.JGoProDlg" />
+        <activity
+            android:label="@string/title_activity_message_dlg"
+            android:name="com.lrcai.ravens.JADMessageDlalog" />
+        <activity
+            android:label="@string/title_activity_gopro_manager"
+            android:name="com.lrcai.ravens.UI.JSettingDlg" />
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:exported="false"
+            android:authorities="com.lrcai.ravens.provider"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:exported="false"
+            android:authorities="com.lrcai.ravens.firebaseinitprovider"
+            android:initOrder="100" />
+        <activity
+            android:theme="@style/Theme.IAPTheme"
+            android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity" />
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false" />
+        <meta-data
+            android:name="com.applisto.appcloner.name"
+            android:value="Netcut" />
+        <meta-data
+            android:name="com.applisto.appcloner.originalName"
+            android:value="Netcut" />
+        <meta-data
+            android:name="com.applisto.appcloner.originalPackageName"
+            android:value="Y29tLmxyY2FpLm5ldGN1dA==" />
+        <meta-data
+            android:name="com.applisto.appcloner.cloneSource"
+            android:value="apk_file" />
+        <meta-data
+            android:name="com.applisto.appcloner.cloneTimestamp"
+            android:value="\ 1636446791647" />
+        <meta-data
+            android:name="com.applisto.appcloner.cloneBuildSerial"
+            android:value="c50d4c674f1e59a6" />
+        <meta-data
+            android:name="com.applisto.appcloner.cloneBuildManufacturer"
+            android:value="Google" />
+        <meta-data
+            android:name="com.applisto.appcloner.cloneBuildModel"
+            android:value="Pixel" />
+        <meta-data
+            android:name="com.applisto.appcloner.clonePremiumVersion"
+            android:value="true" />
+        <meta-data
+            android:name="com.applisto.appcloner.forceDeviceLock"
+            android:value="false" />
+        <meta-data
+            android:name="com.applisto.appcloner.runtimeModdingOptions"
+            android:value="true" />
+        <meta-data
+            android:name="com.applisto.appcloner.bundleOriginalApp"
+            android:value="false" />
+        <meta-data
+            android:name="com.applisto.appcloner.versionCode"
+            android:value="177" />
+        <meta-data
+            android:name="com.applisto.appcloner.versionName"
+            android:value="1.7.7" />
+        <meta-data
+            android:name="com.applisto.appcloner.appClonerVersionCode"
+            android:value="19111210" />
+        <meta-data
+            android:name="com.applisto.appcloner.appClonerVersionName"
+            android:value="1.5.32" />
+        <meta-data
+            android:name="com.applisto.appcloner.appClonerClassesVersionCode"
+            android:value="20190829" />
+        <meta-data
+            android:name="com.applisto.appcloner.originalSignatures"
+            android:value="AQAAABwAAABhAG4AZAByAG8AaQBkAC4AYwBvAG4AdABlAG4AdAAuAHAAbQAuAFMAaQBnAG4AYQB0AHUAcgBlAAAAAACsBAAAMIIEqDCCA5CgAwIBAgIJAJNurL4H8gHfMA0GCSqGSIb3DQEBBQUAMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbTAeFw0wODAyMjkwMTMzNDZaFw0zNTA3MTcwMTMzNDZaMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbTCCASAwDQYJKoZIhvcNAQEBBQADggENADCCAQgCggEBANaTGQTexgskse3HYuDZ2CU+Ps1s6x3i/waMqOi8qM1r03hupwqnbOYOuw+ZNVn/2T53qUPn6D1LZLjk/qLT5lbx4meoG7+yMLV4wgRDvkxyGLhG9SEVhvA4oU6Jwr44f46+z4/Kw9oe4zDJ6pPQp8PcSvNQIg1QCAcy4ICXF+5qBTNZ5qaU7Cyz8oSgpGbIepTYOzEJOmc3Li9kEsBubULxWBjf/gOBzAzURNps3cO4JFgZSAGzJWQTT7/emMkod0jb9WdqVA2BVMi7yge54kdVMxHEa5r3b97szI5p58ii0I54JiCUP5lyfTwE/nKZHZnfm644oLIXf6MdW2r+6R8CAQOjgfwwgfkwHQYDVR0OBBYEFEhZAFY9JyxGrhGGBaR0GawJyowRMIHJBgNVHSMEgcEwgb6AFEhZAFY9JyxGrhGGBaR0GawJyowRoYGapIGXMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbYIJAJNurL4H8gHfMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEFBQADggEBAHqvlozrUMRBBVEY0NqrrwFbinZaJ6cVosK0TyIUFf/azgMJWr+kLfcHCHJsIGnlw27drgQAvilFLAhLwn62oX6snb4YLCBOsVMR9FXYJLZW2+TcIkCRLXWG/oiVHQGo/rWuWkJgU134NDEFJCJGjDbiLCpe+ZTWHdcwauTJ9pUbo8EvHRkU3cYfGmLaLfgn9gP+pWA7LFQNvXwBnDa6sppCccEX31I828XzgXpJ4O+mDL1/dBd+ek8ZPUP0IgdyZm5MTYPhvVqGCHzzTy3sIeJFymwrsBbmg2OAUNLEMO6nwmocSdN2ClirfxqCzJOLSDE4QyS9BAH6EhY6UFcOaE0=" />
+        <meta-data
+            android:name="com.android.vending.derived.apk.id"
+            android:value="1" />
+        <provider
+            android:name="com.applisto.appcloner.classes.DefaultProvider"
+            android:exported="true"
+            android:authorities="com.lrcai.ravens.com.applisto.appcloner.classes.DefaultProvider"
+            android:initOrder="2147483647" />
+        <service
+            android:name="com.applisto.appcloner.service.RemoteService"
+            android:exported="true" />
+        <receiver
+            android:name="com.applisto.appcloner.classes.DefaultProvider$DefaultReceiver"
+            android:exported="true" />
+        <activity
+            android:name="com.applisto.appcloner.classes.DefaultProvider$MyActivity"
+            android:exported="true" />
+        <receiver
+            android:name="com.applisto.appcloner.classes.FakeCamera$FakeCameraReceiver">
+            <intent-filter>
+                <action
+                    android:name="com.applisto.appcloner.action.FAKE_CAMERA_SELECT_CAMERA_PICTURE" />
+                <action
+                    android:name="com.applisto.appcloner.action.FAKE_CAMERA_ROTATE_CLOCKWISE" />
+                <action
+                    android:name="com.applisto.appcloner.action.FAKE_CAMERA_ROTATE_ANTI_CLOCKWISE" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.applisto.appcloner.classes.DisableClipboardAccess$ClearClipboardReceiver" />
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            android:name="com.applisto.appcloner.classes.FakeCamera$FakeCameraActivity" />
+    </application>
+    <uses-permission
+        android:name="android.permission.READ_LOGS" />
+    <uses-permission
+        android:name="android.permission.FLASHLIGHT" />
+    <uses-permission
+        android:name="net.dinglisch.android.tasker.PERMISSION_RUN_TASKS" />
+    <!-- Mengizinkan apl mengonfigurasi ponsel Bluetooth lokal, dan menemukan serta menyandingkan dengan perangkat jarak jauh. -->
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- Mengizinkan aplikasi untuk mengendalikan vibrator. -->
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+    <!-- Aplikasi ini dapat muncul di atas aplikasi lain atau bagian lain pada layar. Ini dapat mengganggu penggunaan aplikasi biasa dan mengubah kemunculan aplikasi lainnya. -->
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- Memungkinkan aplikasi menyambung ke dan memutus dari titik akses Wi-Fi, dan mengubah konfigurasi perangkat untuk jaringan Wi-Fi. -->
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- Mengizinkan aplikasi meminta izin untuk mengabaikan pengoptimalan baterai bagi aplikasi tersebut. -->
+    <uses-permission
+        android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <!-- Memungkinkan aplikasi melihat informasi tentang koneksi jaringan, misalnya jaringan yang ada dan terhubung. -->
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Mengizinkan aplikasi untuk menggunakan hardware sidik jari untuk autentikasi -->
+    <uses-permission
+        android:name="android.permission.USE_FINGERPRINT" />
+    <!-- Memungkinkan aplikasi melihat informasi tentang jaringan Wi-Fi, misalnya apakah Wi-Fi diaktifkan dan nama perangkat Wi-Fi yang terhubung. -->
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- Aplikasi ini dapat mengambil gambar dan merekam video menggunakan kamera saat aplikasi sedang digunakan. -->
+    <uses-permission
+        android:name="android.permission.CAMERA" />
+    <!-- Mengizinkan aplikasi membaca konten penyimpanan bersama Anda. -->
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- Memungkinkan aplikasi melihat konfigurasi Bluetooth di ponsel, dan membuat serta menerima sambungan dengan perangkat yang disandingkan. -->
+    <uses-permission
+        android:name="android.permission.BLUETOOTH" />
+    <!-- Mengizinkan apl memodifikasi data setelan sistem. Apl berbahaya dapat merusak konfigurasi sistem anda. -->
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission
+        android:name="android.permission.READ_SETTINGS" />
+</manifest>

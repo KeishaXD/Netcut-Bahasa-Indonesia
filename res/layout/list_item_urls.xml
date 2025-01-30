@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:paddingTop="7.0dip"
+    android:paddingBottom="7.0dip"
+    android:visibility="gone"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_gravity="left"
+        android:id="@id/id_url"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        style="@style/setting" />
+</LinearLayout>

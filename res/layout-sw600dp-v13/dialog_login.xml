@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_gravity="center"
+        android:padding="@dimen/margin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Logintitle" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="17.0">
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="Nama Pengguna"
+            android:layout_weight="5.0" />
+        <EditText
+            android:id="@id/txtUsername"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="8.0">
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="17.0">
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="Kata Sandi:"
+            android:layout_weight="5.0" />
+        <EditText
+            android:id="@id/txtPassword"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="8.0"
+            android:inputType="textPassword" />
+        <CheckBox
+            android:id="@id/showpass"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/showpass"
+            android:layout_weight="4.0" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="12.0">
+        <Button
+            android:id="@id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masuk"
+            android:layout_weight="3.0" />
+        <Button
+            android:id="@id/btnForget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ForgetPassword"
+            android:layout_weight="3.0" />
+        <Button
+            android:id="@id/btnReg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Register"
+            android:layout_weight="3.0" />
+        <Button
+            android:id="@id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Batal"
+            android:layout_weight="3.0" />
+    </LinearLayout>
+</LinearLayout>

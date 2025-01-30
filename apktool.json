@@ -1,0 +1,38 @@
+{
+  "apkFileName": "Netcut 1.7.7-id_src.apk",
+  "PackageInfo": {
+    "forcedPackageId": "127",
+    "renameManifestPackage": null
+  },
+  "doNotCompress": [
+    "resources.arsc",
+    "lib/armeabi-v7a/libappcloner.so",
+    "lib/armeabi-v7a/libsandhook-native.so",
+    "lib/armeabi-v7a/libsandhook.so",
+    "png"
+  ],
+  "compressionType": false,
+  "sparseResources": false,
+  "version": "2.4.0-241218",
+  "sharedLibrary": false,
+  "VersionInfo": {
+    "versionName": "1.7.7-id",
+    "versionCode": "177"
+  },
+  "UsesFramework": {
+    "ids": [1],
+    "tag": null
+  },
+  "unknownFiles": {
+    "build-data.properties": "8",
+    "jsr305_annotations/Jsr305_annotations.gwt.xml": "8",
+    "cloneSettings.json": "8"
+  },
+  "apkFilePath": "/storage/emulated/0/Download/Telegram/Netcut 1.7.7-id.apk",
+  "compactEntries": false,
+  "isFrameworkApk": false,
+  "sdkInfo": {
+    "minSdkVersion": "14",
+    "targetSdkVersion": "27"
+  }
+}

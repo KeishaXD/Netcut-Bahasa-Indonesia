@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/netcut_pro_account_status"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView
+            android:textSize="@dimen/tile_text_Size"
+            android:padding="@dimen/margin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/netcut_pro_account_title" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/netcut_pro_id_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3.0"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/title_netcut_pro_id"
+                android:layout_weight="1.0" />
+            <TextView
+                android:id="@id/netcut_pro_id"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_weight="2.0" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3.0"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/username"
+                android:layout_weight="1.0" />
+            <TextView
+                android:textColor="@color/holoblue_light"
+                android:id="@id/netcut_pro_username"
+                android:background="?editTextBackground"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:hint="@string/LoginHint"
+                android:layout_weight="2.0"
+                android:inputType="text" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3.0"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/expiretime"
+                android:layout_weight="1.0" />
+            <TextView
+                android:id="@id/netcut_pro_account_expire"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_weight="2.0" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3.0"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/expiredstat"
+                android:layout_weight="1.0" />
+            <TextView
+                android:id="@id/netcut_pro_account_expire_status"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_weight="2.0" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+            <Button
+                android:id="@id/button_extend"
+                android:layout_width="@dimen/HEADER_BUTTON_SIZE"
+                android:layout_height="wrap_content"
+                android:text="@string/netcut_user_buy_1_month"
+                android:textAllCaps="false" />
+            <Button
+                android:id="@id/button_extend_year"
+                android:layout_width="@dimen/HEADER_BUTTON_SIZE"
+                android:layout_height="wrap_content"
+                android:text="@string/netcut_user_buy_1_year"
+                android:textAllCaps="false" />
+            <Button
+                android:id="@id/button_memship_online"
+                android:layout_width="@dimen/HEADER_BUTTON_SIZE"
+                android:layout_height="wrap_content"
+                android:text="Menangkan keanggotaan gratis"
+                android:textAllCaps="false" />
+            <Button
+                android:id="@id/button_relogin"
+                android:layout_width="@dimen/HEADER_BUTTON_SIZE"
+                android:layout_height="wrap_content"
+                android:text="@string/Refresh"
+                android:textAllCaps="false" />
+            <Button
+                android:id="@id/button_support"
+                android:layout_width="@dimen/HEADER_BUTTON_SIZE"
+                android:layout_height="wrap_content"
+                android:text="@string/action_settings"
+                android:textAllCaps="false" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@id/fragement_blacklist"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.lrcai.ravens.JExpandListView.JListViewBase
+        android:id="@id/list_blacklist"
+        android:background="@color/bgd1"
+        android:animationCache="false"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:scrollingCache="false"
+        android:divider="#00000000"
+        android:dividerHeight="1.0px"
+        android:layout_weight="1.0"
+        android:fastScrollEnabled="true"
+        android:smoothScrollbar="true" />
+</LinearLayout>

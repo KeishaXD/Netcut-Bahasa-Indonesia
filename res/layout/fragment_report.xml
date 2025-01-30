@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@id/fragement_reports"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/brandchart"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_margin="20.0dip"
+        android:layout_weight="1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@id/chart1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:id="@id/networkinfo"
+        android:background="@color/bgd1"
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="14.0sp"
+                android:textColor="#ffffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="Gateway:" />
+            <TextView
+                android:textSize="14.0sp"
+                android:textColor="#ffffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="Merek teratas:" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip">
+            <TextView
+                android:textSize="14.0sp"
+                android:typeface="sans"
+                android:textStyle="bold"
+                android:textColor="#ffe8e8e8"
+                android:id="@id/gatewayInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10.0dip"
+                android:text="192.168.01.2616 [62.22.1.й1 ц]" />
+            <TextView
+                android:textSize="14.0sp"
+                android:typeface="sans"
+                android:textStyle="bold"
+                android:textColor="#ffd3d3d3"
+                android:id="@id/brand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10.0dip"
+                android:text="Samsung, Apple, Xiaomi" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

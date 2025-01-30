@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:focusableInTouchMode="false"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingTop="7.0dip"
+        android:focusableInTouchMode="false"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:focusableInTouchMode="false"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:weightSum="7.0"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+            <ImageButton
+                android:layout_gravity="center_vertical"
+                android:id="@id/img_blacklist"
+                android:background="@drawable/on_off_button_bg"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:src="@drawable/blacklist_off"
+                android:layout_weight="1.0" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@id/summary"
+                android:focusableInTouchMode="false"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="6.0"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+                <TextView
+                    android:textColor="?editTextColor"
+                    android:layout_gravity="center|left|top"
+                    android:id="@id/blacklistname"
+                    android:background="?editTextBackground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alex de iphone (192.168.2.1)"
+                    android:hint="@string/blacklist_name_input_hint"
+                    style="@style/username" />
+                <TextView
+                    android:layout_gravity="bottom|center|left"
+                    android:id="@id/blacklistname_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="[1111111111111]" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:padding="15.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="5.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:ads="http://schemas.android.com/apk/res-auto">
+        <TextView
+            android:textSize="@dimen/tile_text_Size"
+            android:textStyle="bold"
+            android:layout_gravity="left"
+            android:id="@id/devmanagertitle"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="Netcut tidak dapat menemukan kartu WIFI Anda, silakan pilih dari daftar satu kartu jaringan di bawah ini untuk dipantau."
+            android:layout_weight="4.0" />
+        <View
+            android:background="#ff808080"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+        <ImageButton
+            android:layout_gravity="center|right"
+            android:id="@id/img_return"
+            android:background="@drawable/on_off_button_bg"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:src="@drawable/return_close"
+            android:layout_weight="1.0"
+            android:layout_alignParentRight="true"
+            android:onClick="onClick" />
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView
+        android:layout_gravity="center"
+        android:id="@id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="LARGE_BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id" />
+    <TextView
+        android:textSize="@dimen/tile_text_Size"
+        android:textStyle="bold"
+        android:layout_gravity="left"
+        android:id="@id/devmanager_wifiMac"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Ini adalah alamat MAC Anda, lihat daftar kartu jaringan di bawah ini dan cari yang mirip." />
+    <ListView
+        android:id="@id/nodeview"
+        android:animationCache="false"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10.0dip"
+        android:scrollingCache="false"
+        android:divider="#ffa4a4a4"
+        android:dividerHeight="1.0px"
+        android:fastScrollEnabled="true"
+        android:smoothScrollbar="true" />
+</LinearLayout>

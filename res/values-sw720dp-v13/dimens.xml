@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="HEADER_BUTTON_SIZE">168.0dip</dimen>
+    <dimen name="activity_horizontal_margin">16.0dip</dimen>
+    <dimen name="activity_vertical_margin">16.0dip</dimen>
+    <dimen name="button_text_size">22.0dip</dimen>
+    <dimen name="input_text_Size">14.0dip</dimen>
+    <dimen name="margin">10.0dip</dimen>
+    <dimen name="margin_bottom">5.0dip</dimen>
+    <dimen name="margin_left">5.0dip</dimen>
+    <dimen name="margin_right">5.0dip</dimen>
+    <dimen name="margin_top">5.0dip</dimen>
+    <dimen name="padding">0.0dip</dimen>
+    <dimen name="text_Size">14.0dip</dimen>
+    <dimen name="tile_text_Size">14.0dip</dimen>
+</resources>
